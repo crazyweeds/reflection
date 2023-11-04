@@ -23,7 +23,7 @@ public class TrimUtils {
             return;
         }
         Iterator<Map.Entry<K, V>> iterator = map.entrySet().iterator();
-        HashMap<K, V> tmp = new HashMap<>();
+        Map<K, V> tmp = new LinkedHashMap<>();
         while (iterator.hasNext()) {
             Map.Entry<K, V> next = iterator.next();
             K key = next.getKey();
